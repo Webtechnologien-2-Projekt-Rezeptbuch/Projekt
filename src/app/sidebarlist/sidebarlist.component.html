@@ -1,0 +1,12 @@
+  <aside>
+    <div class="containerLeftTab">
+      <ul class="recipes">
+  		<li *ngFor="let recipe of recipes">
+  		  <button class="myButton" type="button" (click)="showSelectedRecipe(recipe)">
+   		   {{recipe.title}}
+   		 </button>
+   		 <hr>
+ 		</li>
+		</ul>
+    </div>
+</aside> 
