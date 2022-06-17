@@ -1,0 +1,27 @@
+<div class="container">
+<app-sidebarlist (selectedRecipeEvent) = "showSelectedRecipe($event)"></app-sidebarlist>
+ <div>
+  <div class="tableTitel">
+   	<label class="headline" *ngIf="selectedRecipe != null">{{selectedRecipe.title}} </label>
+  </div> 
+    <hr>
+  
+  <div class="tableZZ">
+  	<label class="sndheadline" *ngIf ="selectedRecipe != null">Zutatenliste:</label>
+    <br />
+      <ol style="list-style-type: circle;">
+    <li *ngIf ="selectedRecipe != null">{{selectedRecipe.ingrediants}}</li>
+  </ol>
+  </div>
+    <hr>
+  
+  <div class="tableZZ">
+     <label class="sndheadline" *ngIf ="selectedRecipe != null">Zubereitung:</label>
+    <br />
+      <ol>
+    <li *ngIf ="selectedRecipe != null">{{selectedRecipe.instructions}}</li>
+  </ol>
+  </div>
+   <app-todolist></app-todolist>
+  </div>
+ </div> 

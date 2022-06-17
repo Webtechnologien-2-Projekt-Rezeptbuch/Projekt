@@ -1,0 +1,110 @@
+.container{
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-template-rows: auto;
+	grid-template-areas: 
+			"sidebar"
+			"recipe";
+}
+
+.articel { 
+  grid-column-start:4; 
+  grid-column-end:5; 
+  grid-row-start:2; 
+  grid-row-end:3; 
+}
+
+.tableTitel { 
+   margin-left: auto;
+   margin-right: auto;
+   display: grid ;
+  grid-area:"Titel";
+   grid-template-rows: repeat(auto-fit, 100%);
+   grid-template-columns: repeat(auto-fit, 50%);
+   justify-content: space-evenly;
+   align-content: center;
+   font-family: Arial, serif;
+   font-size: 24px;
+}
+.tableZZ{
+  margin-left: auto;
+   margin-right: auto;
+   display: grid ;
+  grid-area:"ZZ";
+   grid-template-rows: repeat(auto-fit, 10%);
+   grid-template-columns: repeat(auto-fit, 75%);
+   justify-content: space-evenly;
+   align-content: center;
+   font-family: Arial, serif;
+      position: relative;
+   left: 10%;
+}
+
+.containerLeftTab {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  grid-template-areas: 
+    "Rezepte"; 
+}
+
+.tableRezepte { 
+   margin-left: 10%;
+   margin-right: 100%;
+   display: table;
+   grid-template-rows: repeat(auto-fit, 20%);
+   grid-template-columns: repeat(auto-fit, 20%);
+   justify-content: space-evenly;
+   align-content: left;
+}
+
+.headline{
+  width: auto; height: auto;
+  font-family: Verdana, serif;
+  font-size: 28px;
+  font-weight: 800; 
+  text-decoration: underline solid rgb(68, 68, 68); 
+  border: 0px solid rgb(255, 255, 255);
+}
+
+.sndheadline{
+  width: auto; height: auto;
+  font-family: Arial, serif;
+  font-size: 16px;
+  font-weight: 700; 
+  border: 0px solid rgb(255, 255, 255);
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.myButton {
+  width: 100%; height: auto;
+  color: rgb(0, 0, 0); 
+  font-size: 15px; line-height: 15px;
+  padding: 6px; border-radius: 2px; 
+  font-family: Arial, serif; 
+  background: rgb(255,255,255); 
+  border: 2px solid rgb(255, 255, 255); 
+  display: inline-block;
+  text-shadow: 0px 2px 4px rgba(180,180,180,0.69);
+}
+.myButton:hover {
+  background: #A8A8A8; }
+.myButton:active {
+  background: #595959; }
+
+.h2{
+  font-family: Arial, serif;
+  text-shadow: 0px 2px 4px rgba(92,157,79,0.69);
+}
+
+.labelText{
+	  width: auto; height: auto;
+  font-family: Arial, serif;
+  font-size: 16px;
+  font-weight: 700; 
+  border: 0px solid rgb(255, 255, 255);
+}
